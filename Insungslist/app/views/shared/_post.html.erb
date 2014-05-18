@@ -1,0 +1,8 @@
+<div class="post">
+    <%= post.title %>
+    <li><%= post.body %></li>
+    <% if session[:user_id] == post.user_id %>
+      <%= link_to "Edit", edit_category_post_path(@category, post) %>
+      <%= link_to "Delete", category_post_path(@category, post), :method => :delete, :confirm => 'Are you sure?' %>
+    <% end %>
+</div>

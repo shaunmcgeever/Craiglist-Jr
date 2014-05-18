@@ -1,0 +1,14 @@
+.success {
+  color: green;
+}
+
+.alert {
+  color: red;
+}
+
+.post {
+  margin-top: 20px;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 20px;
+}

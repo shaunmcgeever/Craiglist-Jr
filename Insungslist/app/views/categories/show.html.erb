@@ -1,0 +1,7 @@
+<h1><%= @category.name %></h1>
+
+<%= link_to "New Post", new_category_post_path(@category) %> <br>
+
+<!-- pitfall: don't forget to name the partial the name or the variable you
+     want to iterate through from the collection -->
+<%= render partial: "shared/post", collection: @posts %>
